@@ -1,0 +1,16 @@
+[workspace]
+# A separate workspace
+
+[package]
+name = "sea-orm-playground"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+async-std = { version = "1.12", features = [ "attributes", "tokio1" ] }
+sea-orm = { version = "0.12.6", features = ["runtime-tokio-native-tls", "sqlx-postgres" ] }
+serde_json = { version = "1" }
+futures = { version = "0.3" }
+async-stream = { version = "0.3" }
+futures-util = { version = "0.3" }
